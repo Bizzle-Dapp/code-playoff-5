@@ -12,13 +12,14 @@ const WeatherWeek = ({weather}) => {
 
     return(
         <>
-        {weather.week.map((week) => (
-            <Card sx={{
+        {weather.week.map((week, i) => (
+            <Card key={i}
+            sx={{
                 minHeight: "20vh",
                 maxWidth: "30vw",
-                marginTop: "-3rem",
+                marginTop: "0.5rem",
             }}>
-                <Typography><b>{week.weather.type.toUpperCase()}</b></Typography>
+                <Typography><b>{week.day.toUpperCase()}</b></Typography>
                 <CardContent>
                     <Typography><b>Weather:</b> {week.weather.type}</Typography>
                     <Typography variant="h4">{week.weather.emoji}</Typography>

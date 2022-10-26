@@ -12,7 +12,7 @@ const WeatherDay = ({ weather }) => {
 
     return (
         <>
-            {weather.day.map((day, i) => {
+            {weather.day.map((day, i) => (
                 <Card key={i} sx={{
                     minHeight: "20vh",
                     maxWidth: "30vw",
@@ -25,7 +25,7 @@ const WeatherDay = ({ weather }) => {
                         <Typography><b>We Recommend:</b> {day.weather.recommendation}</Typography>
                     </CardContent>
                 </Card>
-            })}
+            ))}
         </>
     )
 }

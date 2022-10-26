@@ -13,6 +13,7 @@ const TitleBar = () => {
             sx={{
                 width: "100vw",
                 height: "10vh",
+                backgroundColor: 'primary.dark',
                 borderBottom: 'black 0.2rem solid',
                 display: "flex",
                 justifyContent: "center",

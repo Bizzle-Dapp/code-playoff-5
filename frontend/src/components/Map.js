@@ -25,7 +25,7 @@ const Map = ({weatherFetch}) => {
             positionFromLeft:"50%"
         },{
             name: "Ireland",
-            positionFromTop:"20%",
+            positionFromTop:"46%",
             positionFromLeft:"35%"
         },{
             name: "Cornwall",
@@ -45,8 +45,9 @@ const Map = ({weatherFetch}) => {
                     />
                 </React.Fragment>
             ))}
-            <Typography>Please a location.</Typography>
+            <Typography>Please select a location.</Typography>
             <img src="https://media.istockphoto.com/vectors/united-kingdom-uk-of-great-britain-and-northern-ireland-map-divided-vector-id928591430?k=20&m=928591430&s=612x612&w=0&h=snUp8qXit9aIUCXyQY0ZuX5QBA1sQZBsuUa7iO_lzGg="
+                alt="Map of the UK"
                 style={{
                     height: "82vh",
                     borderRadius: "5px",

@@ -53,13 +53,13 @@ const WeatherContainer = ({
                         margin: "0.5rem"
                     }}
                         >
-                        <span className={viewType === VIEW_TYPE[1] ? "Button" : ''}>
+                        <span className={viewType === VIEW_TYPE[0] ? "Button" : ''}>
                             <Button variant="contained"
                                 onClick={() => {
                                     setViewType(VIEW_TYPE[0])
                                 }}>Today's Weather</Button>
                         </span>
-                        <span className={viewType === VIEW_TYPE[0] ? "Button" : ''}>
+                        <span className={viewType === VIEW_TYPE[1] ? "Button" : ''}>
                             <Button variant="contained"
                                 onClick={() => {
                                     setViewType(VIEW_TYPE[1])

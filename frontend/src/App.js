@@ -31,15 +31,14 @@ function App() {
     } 
     // Update our state and scroll to the bottom of the screen.
     setWeather(data);
-    document.getElementById("bottom").scrollIntoView();
   }
-
+  
   /**
    * ⭐⭐⭐: Something can use this instead to fix an infrequent bug.
    */
   useEffect(() => {
-
-  }, [])
+    document.getElementById("bottom").scrollIntoView();
+  }, [weather])
 
   return (
     <Box className="App" sx={{ backgroundColor: 'primary' }}>
